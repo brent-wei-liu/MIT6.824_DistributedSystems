@@ -1,10 +1,19 @@
 package mapreduce
 import "container/list"
-import "fmt"
+import (
+    "fmt"
+//    "time"
+)
 
+const(
+    AVALABLE = iota
+    WORKING
+    DISCONNECTED
+)
 type WorkerInfo struct {
   address string
   // You can add definitions here.
+  status int
 }
 
 
@@ -28,5 +37,37 @@ func (mr *MapReduce) KillWorkers() *list.List {
 
 func (mr *MapReduce) RunMaster() *list.List {
   // Your code here
-  return mr.KillWorkers()
+  
+//    time.Sleep(2*time.Second)
+    addr := <-mr.registerChannel
+    w := new(WorkerInfo)
+    w.address = addr
+    w.status = AVALABLE
+    mr.Workers[addr] = w
+    fmt.Println(addr, mr.Workers)
+   
+    for i:=0; i<mr.nMap; i++{
+        DPrintf("DoWork: DoMap %s\n", w.address)
+        args := &DoJobArgs{mr.file, "Map", i, mr.nReduce}
+        var reply DoJobReply;
+        ok := call(w.address, "Worker.DoJob", args, &reply)
+        if ok == false {
+          fmt.Printf("DoWork: RPC %s DoJob error\n", w.address)
+        }else{
+          fmt.Printf("DoWork: RPC %s DoJob Finished!\n", w.address)
+        }
+    }
+
+    for i:=0; i<mr.nReduce; i++{
+        DPrintf("DoWork: DoReduce %s\n", w.address)
+        args := &DoJobArgs{mr.file, "Reduce", i, mr.nMap}
+        var reply DoJobReply;
+        ok := call(w.address, "Worker.DoJob", args, &reply)
+        if ok == false {
+          fmt.Printf("DoWork: RPC %s DoJob error\n", w.address)
+        }else{
+          fmt.Printf("DoWork: RPC %s DoJob Finished!\n", w.address)
+        }
+    }
+    return mr.KillWorkers()
 }
