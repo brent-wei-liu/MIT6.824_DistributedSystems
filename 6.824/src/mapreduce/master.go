@@ -2,11 +2,11 @@ package mapreduce
 import "container/list"
 import (
     "fmt"
-//    "time"
+    "time"
 )
 
 const(
-    AVALABLE = iota
+    AVAILABLE = iota
     WORKING
     DISCONNECTED
 )
@@ -39,35 +39,79 @@ func (mr *MapReduce) RunMaster() *list.List {
   // Your code here
   
 //    time.Sleep(2*time.Second)
-    addr := <-mr.registerChannel
-    w := new(WorkerInfo)
-    w.address = addr
-    w.status = AVALABLE
-    mr.Workers[addr] = w
-    fmt.Println(addr, mr.Workers)
-   
-    for i:=0; i<mr.nMap; i++{
-        DPrintf("DoWork: DoMap %s\n", w.address)
+go func(){
+    WorkerNum := 20000
+    for i:=0; i<WorkerNum; i++{
+        addr := <-mr.registerChannel
+        w := new(WorkerInfo)
+        w.address = addr
+        w.status = AVAILABLE
+        mr.Workers[addr] = w
+        fmt.Println(addr, mr.Workers)
+    }
+}()
+    i := 0
+    for i<mr.nMap{
+        var worker *WorkerInfo
+        for{
+            for _, v := range mr.Workers{
+                if v.status == AVAILABLE {
+                    worker = v
+                    v.status = WORKING
+                    break
+                }
+            }
+            if worker == nil{
+                fmt.Println("No work available, sleep!")
+                time.Sleep(2*time.Second)
+            }else{
+                break
+            }
+        }
+        DPrintf("DoWork: DoMap[%d] %s\n", i, worker.address)
         args := &DoJobArgs{mr.file, "Map", i, mr.nReduce}
         var reply DoJobReply;
-        ok := call(w.address, "Worker.DoJob", args, &reply)
+        ok := call(worker.address, "Worker.DoJob", args, &reply)
         if ok == false {
-          fmt.Printf("DoWork: RPC %s DoJob error\n", w.address)
+          fmt.Printf("DoWork: RPC %s DoJob error\n", worker.address)
+          worker.status = DISCONNECTED
         }else{
-          fmt.Printf("DoWork: RPC %s DoJob Finished!\n", w.address)
+          fmt.Printf("DoWork: RPC %s DoJob Finished!\n", worker.address)
+          worker.status = AVAILABLE 
+          i++
+        }
+    }
+    i = 0
+    for i<mr.nReduce{
+        var worker *WorkerInfo
+        for{
+            for _, v := range mr.Workers{
+                if v.status == AVAILABLE {
+                    worker = v
+                    v.status = WORKING
+                    break
+                }
+            }
+            if worker == nil{
+                fmt.Println("No work available, sleep!")
+                time.Sleep(2*time.Second)
+            }else{
+                break
+            }
+        }
+        DPrintf("DoWork: DoReduce[%d] %s\n", i, worker.address)
+        args := &DoJobArgs{mr.file, "Reduce", i, mr.nMap}
+        var reply DoJobReply;
+        ok := call(worker.address, "Worker.DoJob", args, &reply)
+        if ok == false {
+          fmt.Printf("DoWork: RPC %s DoJob error\n", worker.address)
+          worker.status = DISCONNECTED
+        }else{
+          fmt.Printf("DoWork: RPC %s DoJob Finished!\n", worker.address)
+          worker.status = AVAILABLE 
+          i++
         }
     }
 
-    for i:=0; i<mr.nReduce; i++{
-        DPrintf("DoWork: DoReduce %s\n", w.address)
-        args := &DoJobArgs{mr.file, "Reduce", i, mr.nMap}
-        var reply DoJobReply;
-        ok := call(w.address, "Worker.DoJob", args, &reply)
-        if ok == false {
-          fmt.Printf("DoWork: RPC %s DoJob error\n", w.address)
-        }else{
-          fmt.Printf("DoWork: RPC %s DoJob Finished!\n", w.address)
-        }
-    }
     return mr.KillWorkers()
 }
