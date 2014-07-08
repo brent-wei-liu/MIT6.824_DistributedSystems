@@ -38,18 +38,19 @@ func (mr *MapReduce) KillWorkers() *list.List {
 func (mr *MapReduce) RunMaster() *list.List {
   // Your code here
   
-//    time.Sleep(2*time.Second)
-go func(){
-    WorkerNum := 20000
-    for i:=0; i<WorkerNum; i++{
-        addr := <-mr.registerChannel
-        w := new(WorkerInfo)
-        w.address = addr
-        w.status = AVAILABLE
-        mr.Workers[addr] = w
-        fmt.Println(addr, mr.Workers)
-    }
-}()
+    //    time.Sleep(2*time.Second)
+    go func(){
+        WorkerNum := 20000
+        for i:=0; i<WorkerNum; i++{
+            addr := <-mr.registerChannel
+            w := new(WorkerInfo)
+            w.address = addr
+            w.status = AVAILABLE
+            mr.Workers[addr] = w
+            fmt.Println(addr, mr.Workers)
+        }
+    }()
+
     i := 0
     for i<mr.nMap{
         var worker *WorkerInfo

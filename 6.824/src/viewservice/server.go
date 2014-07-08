@@ -8,7 +8,11 @@ import "time"
 import "sync"
 import "fmt"
 import "os"
-
+type ServerInfo struct{
+  Me string
+  PingTime int64 // Millisecond
+    
+}
 type ViewServer struct {
   mu sync.Mutex
   l net.Listener
@@ -17,6 +21,10 @@ type ViewServer struct {
 
 
   // Your declarations here.
+  Servers map[string]*ServerInfo
+  Primary string
+  Backup  string
+  Viewnum uint
 }
 
 //
@@ -25,7 +33,14 @@ type ViewServer struct {
 func (vs *ViewServer) Ping(args *PingArgs, reply *PingReply) error {
 
   // Your code here.
-
+  me := args.Me
+  pingTime := time.Now().Unix()
+  
+//  fmt.Printf("Ping by %s at %v.\n",me, pingTime)
+  vs.Servers[me] = &ServerInfo{me,pingTime}
+  //args.Viewnum
+  reply.View = View{vs.Viewnum, vs.Primary, vs.Backup}
+  //fmt.Println("map: ",vs.Servers)
   return nil
 }
 
@@ -35,7 +50,7 @@ func (vs *ViewServer) Ping(args *PingArgs, reply *PingReply) error {
 func (vs *ViewServer) Get(args *GetArgs, reply *GetReply) error {
 
   // Your code here.
-
+  reply.View = View{vs.Viewnum, vs.Primary, vs.Backup}
   return nil
 }
 
@@ -46,7 +61,13 @@ func (vs *ViewServer) Get(args *GetArgs, reply *GetReply) error {
 // accordingly.
 //
 func (vs *ViewServer) tick() {
-
+  if vs.Primary=="" && vs.Backup=="" && len(vs.Servers)!=0{
+    for me, _ := range vs.Servers {
+      vs.Primary = me
+      vs.Viewnum ++
+    }
+    return
+  }
   // Your code here.
 }
 
@@ -63,8 +84,11 @@ func (vs *ViewServer) Kill() {
 func StartServer(me string) *ViewServer {
   vs := new(ViewServer)
   vs.me = me
+  vs.Primary = ""
+  vs.Backup = ""
   // Your vs.* initializations here.
 
+  vs.Servers = make(map[string]*ServerInfo)
   // tell net/rpc about our RPC server and handlers.
   rpcs := rpc.NewServer()
   rpcs.Register(vs)
