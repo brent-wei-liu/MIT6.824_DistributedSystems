@@ -8,9 +8,21 @@ import "time"
 import "sync"
 import "fmt"
 import "os"
+import "errors"
+const MAX_VIEWNUM uint = 10
+const(
+  PRIMARY = iota
+  BACKUP
+  IDLE
+  DEAD
+)
+
 type ServerInfo struct{
   Me string
-  PingTime int64 // Millisecond
+  PingTime time.Time // Millisecond
+  Viewnum uint
+  IsAlive bool
+  Role int
     
 }
 type ViewServer struct {
@@ -25,6 +37,11 @@ type ViewServer struct {
   Primary string
   Backup  string
   Viewnum uint
+  candiPrimary string
+  candiBackup  string
+  candiViewnum uint
+  ACKed  bool //is Current view ACKed? if not VS cannot change 
+
 }
 
 //
@@ -34,13 +51,70 @@ func (vs *ViewServer) Ping(args *PingArgs, reply *PingReply) error {
 
   // Your code here.
   me := args.Me
-  pingTime := time.Now().Unix()
-  
-//  fmt.Printf("Ping by %s at %v.\n",me, pingTime)
-  vs.Servers[me] = &ServerInfo{me,pingTime}
+  pingTime := time.Now()
+  if me=="" {
+    err := errors.New("args.Me is nil")
+    fmt.Println(err)
+    return err
+  }
+  fmt.Printf("Ping by %s (%v) at %v.\n",me,args.Viewnum, pingTime)
+  server, ok := vs.Servers[me] 
+  if ok {
+    server.PingTime = pingTime  
+    server.Viewnum  = args.Viewnum
+    //Server restart
+    if args.Viewnum == 0 {
+      //Primary restart, promote Backup
+      if vs.Primary == me {
+        fmt.Println("Primary Restarted! Promote Backup!")
+        if vs.Backup != "" && vs.ACKed {
+          vs.Servers[vs.Backup].Role = PRIMARY
+          vs.Servers[me].Role = IDLE
+          vs.Primary = vs.Backup
+          vs.Backup = ""
+          vs.Viewnum ++
+          vs.ACKed = false
+        }else{
+            fmt.Println("P restarted ,system collapse!!!")
+            vs.Kill()
+            return nil
+        }
+      //Backup restart
+      }else if vs.Backup == me && vs.ACKed {
+        vs.Viewnum ++
+        vs.ACKed = false
+      }
+    }
+
+    if server.Role == DEAD {
+      server.Role = IDLE
+    }
+  } else{// new server
+    vs.Servers[me] = &ServerInfo{me, pingTime, args.Viewnum, false, IDLE}
+  }
+ 
+
+  //Handle ACKed
+  if !vs.ACKed && me == vs.Primary {
+    if args.Viewnum == vs.Viewnum {// ACKed , Primary running under current view, VS can change current View
+      fmt.Printf("View %v ACKed!\n",vs.Viewnum)
+      vs.ACKed = true
+    }
+  }
+ //Very first primary
+  if vs.Primary=="" && vs.Backup=="" {
+    vs.Primary = me
+    vs.Viewnum ++
+    vs.ACKed = true
+    vs.Servers[me].Viewnum = vs.Viewnum;
+    vs.Servers[me].Role = PRIMARY
+  }
+
   //args.Viewnum
   reply.View = View{vs.Viewnum, vs.Primary, vs.Backup}
-  //fmt.Println("map: ",vs.Servers)
+  fmt.Printf("View(%v , %s, %s) \n",vs.Viewnum, vs.Primary, vs.Backup)
+  fmt.Println("map: ",vs.Servers)
+  fmt.Println()
   return nil
 }
 
@@ -61,14 +135,56 @@ func (vs *ViewServer) Get(args *GetArgs, reply *GetReply) error {
 // accordingly.
 //
 func (vs *ViewServer) tick() {
-  if vs.Primary=="" && vs.Backup=="" && len(vs.Servers)!=0{
-    for me, _ := range vs.Servers {
-      vs.Primary = me
-      vs.Viewnum ++
+  var isPDead, isBDead bool
+  now := time.Now()
+  for _, server := range vs.Servers {
+    if now.Sub( server.PingTime) > (PingInterval * DeadPings) {
+      if server.Role == PRIMARY {
+        isPDead = true
+      }
+      if server.Role == BACKUP {
+        isBDead = true
+      }
+      server.Role = DEAD
+    }
+  }
+  if vs.ACKed {
+    if isPDead {
+       fmt.Println("Primary is dead! Promote Backup!");
+       if vs.Backup != "" {
+          vs.Servers[vs.Backup].Role = PRIMARY
+          vs.Primary = vs.Backup
+          vs.Backup = ""
+          vs.Viewnum ++
+          vs.ACKed = false
+        }else{
+            fmt.Println("P is dead, but no backup, system collapse!!!")
+            vs.Kill()
+            return 
+        }
+        return 
+    }
+    if isBDead {
+       fmt.Println("Backup is dead!");
+       vs.Servers[vs.Backup].Role = DEAD
+       vs.Backup = ""
+       vs.Viewnum ++
+       vs.ACKed = false
+       return
+    }
+    if vs.Backup == "" {
+      for me, server := range vs.Servers{
+        if server.Role == IDLE {
+          vs.Backup = me
+          server.Role = BACKUP
+          vs.Viewnum ++
+          vs.ACKed = false
+          break
+        }
+      }
     }
     return
   }
-  // Your code here.
 }
 
 //
