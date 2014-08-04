@@ -32,22 +32,85 @@ type PBServer struct {
   done sync.WaitGroup
   finish chan interface{}
   // Your declarations here.
+  view viewservice.View
+  KVs map[string]string
+  backup string
 }
 
 func (pb *PBServer) Put(args *PutArgs, reply *PutReply) error {
   // Your code here.
+  fmt.Println("PBServer.Put: ");
+  pb.KVs[args.Key] = args.Value
+  fmt.Println("KVs:",pb.KVs)
   return nil
 }
 
 func (pb *PBServer) Get(args *GetArgs, reply *GetReply) error {
   // Your code here.
+//  var ok bool
+  fmt.Println("PBServer.Get:",args.Key)
+  fmt.Println("KVs:",pb.KVs)
+  reply.Value = pb.KVs[args.Key]
+//  if ok == false {
+//    return fmt.Errorf("Get(%v) failed!", args.Key)
+//  }
   return nil
 }
 
+func (pb *PBServer) Receive(args *TransferArgs, reply *TransferReply) error {
+  // Your code here.
+//  var ok bool
+  pb.KVs = args.KVs
+  reply.knum = len(pb.KVs)
+  fmt.Println("PBServer.Receive:",pb.KVs)
+  fmt.Println("reply.knum=", reply.knum)
+//  if ok == false {
+//    return fmt.Errorf("Get(%v) failed!", args.Key)
+//  }
+  return nil
+}
+
+//
+// transfer all key/value from the current primary to a new backup
+//
+func (pb *PBServer) Transfer(backup string) error {
+
+  // Your code here.
+  return nil
+}
 
 // ping the viewserver periodically.
 func (pb *PBServer) tick() {
   // Your code here.
+   view, _ := pb.vs.Ping(pb.view.Viewnum)
+   if view.Viewnum != pb.view.Viewnum {
+     if view.Primary == pb.me && view.Backup != ""{
+        fmt.Println("Transfer database to backup:", view.Backup)
+        
+        args := &TransferArgs{pb.KVs}
+        var reply TransferReply
+        ok := call(view.Backup, "PBServer.Receive", args, &reply)
+        //if ok == false || reply.knum != len(pb.KVs) {
+        if ok == false {
+           fmt.Printf("Transfer database to backup failed! reply.knum=%v len(pb.KVs)=%v\n", reply.knum, len(pb.KVs))
+           //err := pb.Transfer( view.Backup )
+          //if err == nil {
+          //}
+
+        }else{
+          pb.backup = view.Backup
+          pb.view = view
+        }
+
+
+     }else{
+        pb.view = view
+        pb.backup = view.Backup
+     }
+   }
+
+   
+
 }
 
 
@@ -65,6 +128,7 @@ func StartServer(vshost string, me string) *PBServer {
   pb.vs = viewservice.MakeClerk(me, vshost)
   pb.finish = make(chan interface{})
   // Your pb.* initializations here.
+  pb.KVs = make(map[string]string)
 
   rpcs := rpc.NewServer()
   rpcs.Register(pb)

@@ -14,6 +14,7 @@ import "fmt"
 type Clerk struct {
   vs *viewservice.Clerk
   // Your declarations here
+  primary string
 }
 
 
@@ -21,7 +22,7 @@ func MakeClerk(vshost string, me string) *Clerk {
   ck := new(Clerk)
   ck.vs = viewservice.MakeClerk(me, vshost)
   // Your ck.* initializations here
-
+  ck.primary = ""
   return ck
 }
 
@@ -69,8 +70,13 @@ func call(srv string, rpcname string,
 func (ck *Clerk) Get(key string) string {
 
   // Your code here.
-
-  return "???"
+  args := &GetArgs{key}
+  var reply GetReply
+  ok := call(ck.primary, "PBServer.Get", args, &reply)
+  if ok == false {
+    return ""
+  }
+  return reply.Value
 }
 
 //
@@ -78,9 +84,17 @@ func (ck *Clerk) Get(key string) string {
 // must keep trying until it succeeds.
 //
 func (ck *Clerk) PutExt(key string, value string, dohash bool) string {
-
   // Your code here.
-  return "???"
+  ck.primary = ck.vs.Primary()
+  fmt.Printf("Primary: %s\n", ck.primary)
+  args := &PutArgs{key, value, false}
+  var reply PutReply
+  ok := call(ck.primary, "PBServer.Put", args, &reply)
+  if ok == false {
+    return "ERR" 
+  }
+  return "OK"
+
 }
 
 func (ck *Clerk) Put(key string, value string) {

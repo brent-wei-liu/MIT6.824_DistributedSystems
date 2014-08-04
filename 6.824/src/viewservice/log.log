@@ -1,0 +1,492 @@
+Test: First primary ...
+Ping by /var/tmp/824-506/viewserver-6644-1 (0) at 2014-08-04 17:11:32.863181299 -0400 EDT.
+View(1 , /var/tmp/824-506/viewserver-6644-1, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40]
+
+  ... Passed
+Test: First backup ...
+Ping by /var/tmp/824-506/viewserver-6644-1 (1) at 2014-08-04 17:11:32.866852799 -0400 EDT.
+View(1 , /var/tmp/824-506/viewserver-6644-1, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:32.867343799 -0400 EDT.
+View(1 , /var/tmp/824-506/viewserver-6644-1, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (1) at 2014-08-04 17:11:32.969290671 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:32.971933596 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+  ... Passed
+Test: Backup takes over if primary fails ...
+Ping by /var/tmp/824-506/viewserver-6644-1 (2) at 2014-08-04 17:11:32.979978699 -0400 EDT.
+View 2 ACKed!
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (2) at 2014-08-04 17:11:32.9815808 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (2) at 2014-08-04 17:11:32.9831684 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (2) at 2014-08-04 17:11:33.085101444 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (2) at 2014-08-04 17:11:33.1865605 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (2) at 2014-08-04 17:11:33.288056678 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (2) at 2014-08-04 17:11:33.389829888 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (2) at 2014-08-04 17:11:33.491524617 -0400 EDT.
+View(2 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-2) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Primary is dead! Promote Backup!
+Ping by /var/tmp/824-506/viewserver-6644-2 (2) at 2014-08-04 17:11:33.593096777 -0400 EDT.
+View(3 , /var/tmp/824-506/viewserver-6644-2, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+  ... Passed
+Test: Restarted server becomes backup ...
+Ping by /var/tmp/824-506/viewserver-6644-2 (3) at 2014-08-04 17:11:33.599568702 -0400 EDT.
+View 3 ACKed!
+View(3 , /var/tmp/824-506/viewserver-6644-2, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (0) at 2014-08-04 17:11:33.600758501 -0400 EDT.
+View(3 , /var/tmp/824-506/viewserver-6644-2, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (3) at 2014-08-04 17:11:33.602053299 -0400 EDT.
+View(3 , /var/tmp/824-506/viewserver-6644-2, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (0) at 2014-08-04 17:11:33.70376271 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (3) at 2014-08-04 17:11:33.705063787 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+  ... Passed
+Test: Idle third server becomes backup if primary fails ...
+Ping by /var/tmp/824-506/viewserver-6644-2 (4) at 2014-08-04 17:11:33.709278181 -0400 EDT.
+View 4 ACKed!
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:33.710787045 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (4) at 2014-08-04 17:11:33.713661896 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:33.814857223 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (4) at 2014-08-04 17:11:33.815974506 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:33.917569097 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (4) at 2014-08-04 17:11:33.919156914 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:34.02118843 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (4) at 2014-08-04 17:11:34.023439313 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:34.1251188 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (4) at 2014-08-04 17:11:34.1263911 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:34.22797507 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (4) at 2014-08-04 17:11:34.229320981 -0400 EDT.
+View(4 , /var/tmp/824-506/viewserver-6644-2, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Primary is dead! Promote Backup!
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:34.331241105 -0400 EDT.
+View(5 , /var/tmp/824-506/viewserver-6644-1, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (4) at 2014-08-04 17:11:34.337334288 -0400 EDT.
+View(5 , /var/tmp/824-506/viewserver-6644-1, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:34.4397115 -0400 EDT.
+View(5 , /var/tmp/824-506/viewserver-6644-1, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (5) at 2014-08-04 17:11:34.440640564 -0400 EDT.
+View 5 ACKed!
+View(5 , /var/tmp/824-506/viewserver-6644-1, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (0) at 2014-08-04 17:11:34.542081094 -0400 EDT.
+View(6 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-3) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (5) at 2014-08-04 17:11:34.543215482 -0400 EDT.
+View(6 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-3) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+  ... Passed
+Test: Restarted primary treated as dead ...
+Ping by /var/tmp/824-506/viewserver-6644-1 (6) at 2014-08-04 17:11:34.548081025 -0400 EDT.
+View 6 ACKed!
+View(6 , /var/tmp/824-506/viewserver-6644-1, /var/tmp/824-506/viewserver-6644-3) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (0) at 2014-08-04 17:11:34.549542513 -0400 EDT.
+Primary Restarted! Promote Backup!
+View(7 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (6) at 2014-08-04 17:11:34.551111601 -0400 EDT.
+View(7 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+  ... Passed
+Ping by /var/tmp/824-506/viewserver-6644-3 (7) at 2014-08-04 17:11:34.5569466 -0400 EDT.
+View 7 ACKed!
+View(7 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (8) at 2014-08-04 17:11:34.659597077 -0400 EDT.
+View 8 ACKed!
+View(8 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (8) at 2014-08-04 17:11:34.763088025 -0400 EDT.
+View(8 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (8) at 2014-08-04 17:11:34.865623514 -0400 EDT.
+View(8 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (8) at 2014-08-04 17:11:34.968139799 -0400 EDT.
+View(8 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Backup is dead!
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.071081403 -0400 EDT.
+View 9 ACKed!
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.17670523 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.280083965 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.382740401 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.48602193 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.588672338 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.691740874 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.796176735 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:35.898716189 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:36.001308174 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Test: Viewserver waits for primary to ack view ...
+Ping by /var/tmp/824-506/viewserver-6644-1 (0) at 2014-08-04 17:11:36.106092114 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:36.107347305 -0400 EDT.
+View(9 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (0) at 2014-08-04 17:11:36.210207511 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (9) at 2014-08-04 17:11:36.212028002 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:36.220124199 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:36.32158315 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:36.423301276 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:36.525070387 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:36.626739163 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:36.728479667 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:36.830636785 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:36.932919503 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.035065281 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.138687401 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.240042628 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.341974804 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.443943802 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.545581985 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.64743247 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+  ... Passed
+Test: Uninitialized server can't become primary ...
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.752000099 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:37.753028602 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:37.754349501 -0400 EDT.
+View 10 ACKed!
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.859584942 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:37.860734175 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:37.861647402 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:37.964005717 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:37.965725057 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:37.967689801 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:38.071720886 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.073256199 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:38.074343105 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:38.177429323 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.178335498 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:38.181822514 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:38.28400445 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.284952411 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:38.285888974 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:38.388694871 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.389721695 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:38.391028721 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:38.494297599 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.495717697 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:38.497087498 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:38.602031101 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.6034244 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:38.604354899 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-1 (10) at 2014-08-04 17:11:38.706947402 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.708623223 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-3 (10) at 2014-08-04 17:11:38.70996194 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.811603684 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:38.913170839 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:39.015052706 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:39.116930881 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:39.219094205 -0400 EDT.
+View(10 , /var/tmp/824-506/viewserver-6644-3, /var/tmp/824-506/viewserver-6644-1) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Backup is dead!
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:39.320997074 -0400 EDT.
+View(11 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:39.4248199 -0400 EDT.
+View(11 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:39.526186963 -0400 EDT.
+View(11 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:39.627454809 -0400 EDT.
+View(11 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+Ping by /var/tmp/824-506/viewserver-6644-2 (0) at 2014-08-04 17:11:39.729026605 -0400 EDT.
+View(11 , /var/tmp/824-506/viewserver-6644-3, ) 
+map:  map[/var/tmp/824-506/viewserver-6644-1:0xc21008fd40 /var/tmp/824-506/viewserver-6644-2:0xc210114080 /var/tmp/824-506/viewserver-6644-3:0xc2100d9e00]
+
+  ... Passed
+PASS
+ok  	viewservice	6.976s

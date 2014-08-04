@@ -1,0 +1,215 @@
+Test: Single primary, no backup ...
+Ping by /var/tmp/824-506/pb-6568-basic-1 (0) at 2014-08-04 17:08:28.63263438 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:28.734853301 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:28.840779582 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:28.942609503 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.044185847 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.146594161 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.248606474 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.350589715 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.45241237 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.554674299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+
+Primary: /var/tmp/824-506/pb-6568-basic-1
+PBServer.Put: 
+KVs: map[111:v1]
+PBServer.Get: 111
+Primary: /var/tmp/824-506/pb-6568-basic-1
+PBServer.Put: 
+KVs: map[111:v1 2:v2]
+PBServer.Get: 2
+Primary: /var/tmp/824-506/pb-6568-basic-1
+PBServer.Put: 
+KVs: map[111:v1 2:v2 1:v1a]
+PBServer.Get: 1
+  ... Passed
+Test: Add a backup ...
+Ping by /var/tmp/824-506/pb-6568-basic-2 (0) at 2014-08-04 17:08:29.6466307 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.656958198 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (1) at 2014-08-04 17:08:29.750088722 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Primary: /var/tmp/824-506/pb-6568-basic-1
+PBServer.Put: 
+KVs: map[111:v1 2:v2 1:v1a 3:33]
+PBServer.Get: 3
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.7591216 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Transfer database to backup: /var/tmp/824-506/pb-6568-basic-2
+PBServer.Receive: map[111:v1 2:v2 1:v1a 3:33]
+reply.knum= 4
+Transfer database to backup failed! reply.knum=0 len(pb.KVs)=4
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:29.851281439 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.864618866 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Transfer database to backup: /var/tmp/824-506/pb-6568-basic-2
+PBServer.Receive: map[111:v1 2:v2 1:v1a 3:33]
+reply.knum= 4
+Transfer database to backup failed! reply.knum=0 len(pb.KVs)=4
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:29.955695399 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.967314598 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Transfer database to backup: /var/tmp/824-506/pb-6568-basic-2
+PBServer.Receive: map[111:v1 2:v2 1:v1a 3:33]
+reply.knum= 4
+Transfer database to backup failed! reply.knum=0 len(pb.KVs)=4
+Primary: /var/tmp/824-506/pb-6568-basic-1
+PBServer.Put: 
+KVs: map[111:v1 2:v2 1:v1a 3:33 4:44]
+PBServer.Get: 4
+  ... Passed
+Test: Primary failure ...
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.058028698 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.160385368 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.261230699 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.362636199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.465243997 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.566779091 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.668369235 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.771266823 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.875384493 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.9777167 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+--- FAIL: TestBasicFail (3.45 seconds)
+	test_test.go:108: backup never switched to primary
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.182403645 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.284861215 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.386382501 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.488073849 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.589903131 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.691739698 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.794249362 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.900031402 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:32.001339596 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Test: at-most-once Put; unreliable ...
+Ping by /var/tmp/824-506/pb-6568-csu-1 (0) at 2014-08-04 17:08:32.081907571 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-csu-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-csu-1:0xc2101aae00]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:32.102822863 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-csu-1 (1) at 2014-08-04 17:08:32.183382707 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-csu-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-csu-1:0xc2101aae00]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:32.204084763 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
+Ping by /var/tmp/824-506/pb-6568-csu-1 (1) at 2014-08-04 17:08:32.285689796 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-6568-csu-1, ) 
+map:  map[/var/tmp/824-506/pb-6568-csu-1:0xc2101aae00]
+
+Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:32.305432511 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
+map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+
