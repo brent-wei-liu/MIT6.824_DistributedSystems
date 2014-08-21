@@ -17,6 +17,8 @@ type PutArgs struct {
 
   // Field names must start with capital letters,
   // otherwise RPC will break.
+  SeqNum int64
+  ClientID int64
 }
 
 type PutReply struct {
@@ -37,12 +39,21 @@ type GetReply struct {
 
 // Your RPC definitions here.
 type TransferArgs struct{
-  KVs map[string]string
+  KV map[string]string
 }
 type TransferReply struct{
   knum int
   Err Err
 }
+
+type ReceivePutArgs struct{
+  Key string
+  Value string
+}
+type ReceivePutReply struct{
+  Err Err
+}
+
 func hash(s string) uint32 {
   h := fnv.New32a()
   h.Write([]byte(s))

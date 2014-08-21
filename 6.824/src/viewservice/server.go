@@ -113,7 +113,7 @@ func (vs *ViewServer) Ping(args *PingArgs, reply *PingReply) error {
   //args.Viewnum
   reply.View = View{vs.Viewnum, vs.Primary, vs.Backup}
   fmt.Printf("View(%v , %s, %s) \n",vs.Viewnum, vs.Primary, vs.Backup)
-  fmt.Println("map: ",vs.Servers)
+//  fmt.Println("map: ",vs.Servers)
   fmt.Println()
   return nil
 }

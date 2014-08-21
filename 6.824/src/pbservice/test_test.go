@@ -174,13 +174,21 @@ func TestAtMostOnce(t *testing.T) {
   ck := MakeClerk(vshost, "")
   k := "counter"
   val := ""
+  pre_val := ""
   for i := 0; i < 100; i++ {
     v := strconv.Itoa(i)
     pv := ck.PutHash(k, v)
+    fmt.Printf("PutHash(%v, %v) expect pv:%v = %v + %v and pv=%v\n",k ,v, val, pre_val , v, pv)
     if pv != val {
+      for i := 0; i < nservers; i++ {
+        sa[i].kill()
+      }
+      vs.Kill()
+
       t.Fatalf("ck.Puthash() returned %v but expected %v\n", pv, val)
     }
     h := hash(val + v)
+    pre_val = val
     val = strconv.Itoa(int(h))
   }
 

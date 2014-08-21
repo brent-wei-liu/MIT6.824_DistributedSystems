@@ -5,16 +5,17 @@ import "net/rpc"
 import "fmt"
 
 // You'll probably need to uncomment these:
-// import "time"
-// import "crypto/rand"
-// import "math/big"
+ import "time"
+ import "crypto/rand"
+ import "math/big"
 
 
 
 type Clerk struct {
   vs *viewservice.Clerk
   // Your declarations here
-  primary string
+  id int64
+  seq_num int64
 }
 
 
@@ -22,11 +23,17 @@ func MakeClerk(vshost string, me string) *Clerk {
   ck := new(Clerk)
   ck.vs = viewservice.MakeClerk(me, vshost)
   // Your ck.* initializations here
-  ck.primary = ""
+  ck.id = nrand()
+  ck.seq_num = 0
   return ck
 }
 
-
+func nrand() int64 {
+    max := big.NewInt(int64(1) << 62)
+    bigx, _ := rand.Int(rand.Reader, max)
+    x := bigx.Int64()
+    return x
+}
 //
 // call() sends an RPC to the rpcname handler on server srv
 // with arguments args, waits for the reply, and leaves the
@@ -47,6 +54,7 @@ func call(srv string, rpcname string,
           args interface{}, reply interface{}) bool {
   c, errx := rpc.Dial("unix", srv)
   if errx != nil {
+    //fmt.Println("rpc.dial error");
     return false
   }
   defer c.Close()
@@ -55,8 +63,9 @@ func call(srv string, rpcname string,
   if err == nil {
     return true
   }
-
+  fmt.Println("TEST1")
   fmt.Println(err)
+  fmt.Println("TEST")
   return false
 }
 
@@ -72,9 +81,9 @@ func (ck *Clerk) Get(key string) string {
   // Your code here.
   args := &GetArgs{key}
   var reply GetReply
-  ok := call(ck.primary, "PBServer.Get", args, &reply)
-  if ok == false {
-    return ""
+  var ok bool = false
+  for ok == false {
+    ok = call(ck.vs.Primary(), "PBServer.Get", args, &reply)
   }
   return reply.Value
 }
@@ -84,17 +93,19 @@ func (ck *Clerk) Get(key string) string {
 // must keep trying until it succeeds.
 //
 func (ck *Clerk) PutExt(key string, value string, dohash bool) string {
-  // Your code here.
-  ck.primary = ck.vs.Primary()
-  fmt.Printf("Primary: %s\n", ck.primary)
-  args := &PutArgs{key, value, false}
-  var reply PutReply
-  ok := call(ck.primary, "PBServer.Put", args, &reply)
-  if ok == false {
-    return "ERR" 
-  }
-  return "OK"
+    // Your code here.
+    ck.seq_num++
+    fmt.Printf("client sends put request with seq_num:%v \n ", ck.seq_num)
 
+    args := &PutArgs{Key: key, Value: value, DoHash: dohash, SeqNum:ck.seq_num, ClientID: ck.id}
+    var reply PutReply
+    ok := call(ck.vs.Primary(), "PBServer.Put", args, &reply)
+    for ok == false || reply.Err != OK  {
+        fmt.Printf("client received failed put request! OK: %t reply.Err: %s\n", ok, reply.Err)
+        ok = call(ck.vs.Primary(), "PBServer.Put", args, &reply)
+        time.Sleep(viewservice.PingInterval)
+    }
+    return reply.PreviousValue
 }
 
 func (ck *Clerk) Put(key string, value string) {

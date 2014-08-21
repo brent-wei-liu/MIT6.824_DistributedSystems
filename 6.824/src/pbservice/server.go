@@ -11,7 +11,7 @@ import "syscall"
 import "math/rand"
 import "sync"
 
-//import "strconv"
+import "strconv"
 
 // Debugging
 const Debug = 0
@@ -33,15 +33,51 @@ type PBServer struct {
   finish chan interface{}
   // Your declarations here.
   view viewservice.View
-  KVs map[string]string
+  kv map[string]string
+  isPrimary bool
   backup string
+  mu sync.Mutex
 }
 
 func (pb *PBServer) Put(args *PutArgs, reply *PutReply) error {
   // Your code here.
-  fmt.Println("PBServer.Put: ");
-  pb.KVs[args.Key] = args.Value
-  fmt.Println("KVs:",pb.KVs)
+  pb.mu.Lock()
+  defer pb.mu.Unlock()
+
+  fmt.Println("PBServer.Put: ", args)
+  
+  if pb.isPrimary {
+        if args.DoHash{
+            prev_val, exists := pb.kv[args.Key]
+            if exists == false {
+                prev_val = ""
+            }
+            args.Value = strconv.Itoa(int(hash(prev_val + args.Value))) // new value is the hash of the prev_val and value
+            reply.PreviousValue = prev_val
+        }
+        pb.kv[args.Key] = args.Value
+        reply.Err = OK
+
+ 
+        fmt.Println(" kv:",pb.kv, " ",pb.me)
+        if pb.backup != ""{
+            fmt.Printf("Primary:%v forward put to backup:%v\n",pb.me, pb.backup)
+            args1 := &ReceivePutArgs{Key:args.Key, Value:args.Value}
+            var reply1 ReceivePutReply
+            ok := call(pb.backup, "PBServer.ReceivePut", args1, &reply1)
+            //if ok == false || reply.knum != len(pb.kv) {
+            for ok == false || reply1.Err != OK {
+                fmt.Printf("Primary received error from backup when trying send getupdate! OK: %t reply.Err: %s\n", ok, reply1.Err)
+                time.Sleep(viewservice.PingInterval)
+                pb.tick()
+                ok = call(pb.backup, "PBServer.ReceivePut", args1, &reply1)
+            }
+        }
+        reply.Err = OK
+  } else if !pb.isPrimary {
+      DPrintf("I %s am not primary and cannot put this!", pb.me)
+      reply.Err = ErrWrongServer
+  }
   return nil
 }
 
@@ -49,20 +85,39 @@ func (pb *PBServer) Get(args *GetArgs, reply *GetReply) error {
   // Your code here.
 //  var ok bool
   fmt.Println("PBServer.Get:",args.Key)
-  fmt.Println("KVs:",pb.KVs)
-  reply.Value = pb.KVs[args.Key]
+  fmt.Println(" kv:",pb.kv, " ",pb.me)
+  
+  reply.Value = pb.kv[args.Key]
 //  if ok == false {
 //    return fmt.Errorf("Get(%v) failed!", args.Key)
 //  }
   return nil
 }
+func (pb *PBServer) ReceivePut(args *ReceivePutArgs, reply *ReceivePutReply) error {
+  // Your code here.
+    if pb.backup == pb.me{
+        fmt.Printf("server %s received getupdate request %v! state is %v\n", pb.me, args.Key, args.Value)
+//        pb.SequenceHandled(args.ClientID, args.SeqNum)
+//        pb.client_map[args.ClientID][args.SeqNum] = args.Value
+        pb.kv[args.Key] = args.Value
+        reply.Err = OK
+    } else {
+        DPrintf("I %s am not backup and cannot get this!", pb.me)
+        reply.Err = ErrWrongServer
+    }
+    return nil
 
-func (pb *PBServer) Receive(args *TransferArgs, reply *TransferReply) error {
+}
+
+func (pb *PBServer) TransferState(args *TransferArgs, reply *TransferReply) error {
   // Your code here.
 //  var ok bool
-  pb.KVs = args.KVs
-  reply.knum = len(pb.KVs)
-  fmt.Println("PBServer.Receive:",pb.KVs)
+  if pb.isPrimary {
+    return fmt.Errorf("Receive Backup database error! I am Primary!");
+  }
+  pb.kv = args.KV
+  reply.knum = len(pb.kv)
+  fmt.Println("PBServer.Receive:",pb.kv)
   fmt.Println("reply.knum=", reply.knum)
 //  if ok == false {
 //    return fmt.Errorf("Get(%v) failed!", args.Key)
@@ -70,29 +125,27 @@ func (pb *PBServer) Receive(args *TransferArgs, reply *TransferReply) error {
   return nil
 }
 
-//
-// transfer all key/value from the current primary to a new backup
-//
-func (pb *PBServer) Transfer(backup string) error {
-
-  // Your code here.
-  return nil
-}
 
 // ping the viewserver periodically.
 func (pb *PBServer) tick() {
   // Your code here.
    view, _ := pb.vs.Ping(pb.view.Viewnum)
+   if view.Primary == pb.me{
+     pb.isPrimary = true
+   }else{
+     pb.isPrimary = false
+   }
    if view.Viewnum != pb.view.Viewnum {
-     if view.Primary == pb.me && view.Backup != ""{
+    // transfer all key/value from the current primary to a new backup
+     if pb.isPrimary && view.Backup != ""{
         fmt.Println("Transfer database to backup:", view.Backup)
         
-        args := &TransferArgs{pb.KVs}
+        args := &TransferArgs{pb.kv}
         var reply TransferReply
-        ok := call(view.Backup, "PBServer.Receive", args, &reply)
-        //if ok == false || reply.knum != len(pb.KVs) {
+        ok := call(view.Backup, "PBServer.TransferState", args, &reply)
+        //if ok == false || reply.knum != len(pb.kv) {
         if ok == false {
-           fmt.Printf("Transfer database to backup failed! reply.knum=%v len(pb.KVs)=%v\n", reply.knum, len(pb.KVs))
+           fmt.Printf("Transfer database to backup failed! reply.knum=%v len(pb.kv)=%v\n", reply.knum, len(pb.kv))
            //err := pb.Transfer( view.Backup )
           //if err == nil {
           //}
@@ -108,9 +161,6 @@ func (pb *PBServer) tick() {
         pb.backup = view.Backup
      }
    }
-
-   
-
 }
 
 
@@ -128,8 +178,8 @@ func StartServer(vshost string, me string) *PBServer {
   pb.vs = viewservice.MakeClerk(me, vshost)
   pb.finish = make(chan interface{})
   // Your pb.* initializations here.
-  pb.KVs = make(map[string]string)
-
+  pb.kv = make(map[string]string)
+  pb.isPrimary = false
   rpcs := rpc.NewServer()
   rpcs.Register(pb)
 
