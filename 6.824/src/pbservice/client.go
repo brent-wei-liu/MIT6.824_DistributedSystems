@@ -93,7 +93,7 @@ func (ck *Clerk) Get(key string) string {
 func (ck *Clerk) PutExt(key string, value string, dohash bool) string {
     // Your code here.
     ck.seq_num++
-    fmt.Printf("Clent: sends put request with seq_num:%v \n ", ck.seq_num)
+    fmt.Printf("Clent: sends put request with seq_num:%v\n ", ck.seq_num)
 
     args := &PutArgs{Key: key, Value: value, DoHash: dohash, SeqNum:ck.seq_num, ClientID: ck.id}
     var reply PutReply

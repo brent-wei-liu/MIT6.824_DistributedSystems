@@ -176,6 +176,7 @@ func (pb *PBServer) tick() {
 // tell the server to shut itself down.
 // please do not change this function.
 func (pb *PBServer) kill() {
+  DPrintf("Server: Killed! %v\n",pb.me)
   pb.dead = true
   pb.l.Close()
 }

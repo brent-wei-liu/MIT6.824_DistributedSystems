@@ -1,215 +1,1503 @@
 Test: Single primary, no backup ...
-Ping by /var/tmp/824-506/pb-6568-basic-1 (0) at 2014-08-04 17:08:28.63263438 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (0) at 2014-08-22 15:20:48.851744313 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:28.734853301 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:48.953419164 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:28.840779582 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.057204808 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:28.942609503 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.158787268 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.044185847 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.26027524 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.146594161 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.361952637 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.248606474 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.464556931 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.350589715 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.566591297 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.45241237 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.669341429 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.554674299 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.771899668 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Primary: /var/tmp/824-506/pb-6568-basic-1
-PBServer.Put: 
-KVs: map[111:v1]
-PBServer.Get: 111
-Primary: /var/tmp/824-506/pb-6568-basic-1
-PBServer.Put: 
-KVs: map[111:v1 2:v2]
-PBServer.Get: 2
-Primary: /var/tmp/824-506/pb-6568-basic-1
-PBServer.Put: 
-KVs: map[111:v1 2:v2 1:v1a]
-PBServer.Get: 1
+Clent: sends put request with seq_num:1
+ Server: /var/tmp/824-506/pb-38661-basic-1 received put request 111 -> v1! DoHash? false. Seq #: 1
+pb.kv:map[111:v1]
+
+PBServer.Get:111
+ kv: map[111:v1]   /var/tmp/824-506/pb-38661-basic-1
+Clent: sends put request with seq_num:2
+ Server: /var/tmp/824-506/pb-38661-basic-1 received put request 2 -> v2! DoHash? false. Seq #: 2
+pb.kv:map[111:v1 2:v2]
+
+PBServer.Get:2
+ kv: map[111:v1 2:v2]   /var/tmp/824-506/pb-38661-basic-1
+Clent: sends put request with seq_num:3
+ Server: /var/tmp/824-506/pb-38661-basic-1 received put request 1 -> v1a! DoHash? false. Seq #: 3
+pb.kv:map[111:v1 2:v2 1:v1a]
+
+PBServer.Get:1
+ kv: map[111:v1 2:v2 1:v1a]   /var/tmp/824-506/pb-38661-basic-1
   ... Passed
 Test: Add a backup ...
-Ping by /var/tmp/824-506/pb-6568-basic-2 (0) at 2014-08-04 17:08:29.6466307 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (0) at 2014-08-22 15:20:49.866916399 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.656958198 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-basic-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.877058698 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-basic-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (1) at 2014-08-04 17:08:29.750088722 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (1) at 2014-08-22 15:20:49.968189221 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Primary: /var/tmp/824-506/pb-6568-basic-1
-PBServer.Put: 
-KVs: map[111:v1 2:v2 1:v1a 3:33]
-PBServer.Get: 3
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.7591216 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Clent: sends put request with seq_num:4
+ Server: /var/tmp/824-506/pb-38661-basic-1 received put request 3 -> 33! DoHash? false. Seq #: 4
+pb.kv:map[111:v1 2:v2 1:v1a 3:33]
 
-Transfer database to backup: /var/tmp/824-506/pb-6568-basic-2
+PBServer.Get:3
+ kv: map[111:v1 2:v2 1:v1a 3:33]   /var/tmp/824-506/pb-38661-basic-1
+Ping by /var/tmp/824-506/pb-38661-basic-1 (1) at 2014-08-22 15:20:49.978336899 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
+
+Transfer database to backup: /var/tmp/824-506/pb-38661-basic-2
 PBServer.Receive: map[111:v1 2:v2 1:v1a 3:33]
 reply.knum= 4
-Transfer database to backup failed! reply.knum=0 len(pb.KVs)=4
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:29.851281439 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.070748605 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.864618866 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (2) at 2014-08-22 15:20:50.081393684 -0400 EDT.
+View 2 ACKed!
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Transfer database to backup: /var/tmp/824-506/pb-6568-basic-2
-PBServer.Receive: map[111:v1 2:v2 1:v1a 3:33]
-reply.knum= 4
-Transfer database to backup failed! reply.knum=0 len(pb.KVs)=4
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:29.955695399 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.173080367 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-1 (1) at 2014-08-04 17:08:29.967314598 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-1 (2) at 2014-08-22 15:20:50.18294656 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Transfer database to backup: /var/tmp/824-506/pb-6568-basic-2
-PBServer.Receive: map[111:v1 2:v2 1:v1a 3:33]
-reply.knum= 4
-Transfer database to backup failed! reply.knum=0 len(pb.KVs)=4
-Primary: /var/tmp/824-506/pb-6568-basic-1
-PBServer.Put: 
-KVs: map[111:v1 2:v2 1:v1a 3:33 4:44]
-PBServer.Get: 4
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.274899804 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
+
+Clent: sends put request with seq_num:5
+ Server: /var/tmp/824-506/pb-38661-basic-1 received put request 4 -> 44! DoHash? false. Seq #: 5
+pb.kv:map[111:v1 2:v2 1:v1a 3:33 4:44]
+
+Server(Primary): /var/tmp/824-506/pb-38661-basic-1 sending putupdate request 4 -> 44!
+Server(Backup): /var/tmp/824-506/pb-38661-basic-2 received putupdate request 4 -> 44! State is 44
+PBServer.Get:4
+ kv: map[111:v1 2:v2 1:v1a 3:33 4:44]   /var/tmp/824-506/pb-38661-basic-1
   ... Passed
 Test: Primary failure ...
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.058028698 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Server: Killed! /var/tmp/824-506/pb-38661-basic-1
+/var/tmp/824-506/pb-38661-basic-1: wait until all request are done
+Ping by /var/tmp/824-506/pb-38661-basic-1 (2) at 2014-08-22 15:20:50.289211299 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.160385368 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.376641729 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.261230699 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.47820245 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.362636199 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.580482412 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.465243997 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.682351254 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.566779091 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.784524315 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-basic-1, /var/tmp/824-506/pb-38661-basic-2) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.668369235 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Primary is dead! Promote Backup!
+Ping by /var/tmp/824-506/pb-38661-basic-2 (2) at 2014-08-22 15:20:50.886376071 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.771266823 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+PBServer.Get:1
+ kv: map[111:v1 2:v2 1:v1a 3:33 4:44]   /var/tmp/824-506/pb-38661-basic-2
+PBServer.Get:3
+ kv: map[111:v1 2:v2 1:v1a 3:33 4:44]   /var/tmp/824-506/pb-38661-basic-2
+PBServer.Get:4
+ kv: map[111:v1 2:v2 1:v1a 3:33 4:44]   /var/tmp/824-506/pb-38661-basic-2
+  ... Passed
+Test: Kill last server, new one should not be active ...
+Server: Killed! /var/tmp/824-506/pb-38661-basic-2
+/var/tmp/824-506/pb-38661-basic-2: wait until all request are done
+Ping by /var/tmp/824-506/pb-38661-basic-3 (0) at 2014-08-22 15:20:50.909736696 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.875384493 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.0114025 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:30.9777167 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.113386319 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
---- FAIL: TestBasicFail (3.45 seconds)
-	test_test.go:108: backup never switched to primary
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.215559296 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.182403645 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.317548129 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.284861215 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.419377173 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.386382501 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.523648398 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.488073849 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.624798646 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.589903131 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.725933309 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.691739698 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.827784916 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.794249362 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:51.929946511 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:31.900031402 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.031374999 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:32.001339596 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.133041299 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
 
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.2344236 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.346094999 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.446692999 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.550801399 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.651609399 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.752313199 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.852773999 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:52.960719299 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.061644299 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.162524599 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.264006899 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.365878399 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.466710199 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.568103799 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.670861999 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.774073799 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+Ping by /var/tmp/824-506/pb-38661-basic-3 (3) at 2014-08-22 15:20:53.878488999 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-basic-2, ) 
+
+  ... Passed
+Server: Killed! /var/tmp/824-506/pb-38661-basic-1
+Server: Killed! /var/tmp/824-506/pb-38661-basic-2
+Server: Killed! /var/tmp/824-506/pb-38661-basic-3
+/var/tmp/824-506/pb-38661-basic-3: wait until all request are done
 Test: at-most-once Put; unreliable ...
-Ping by /var/tmp/824-506/pb-6568-csu-1 (0) at 2014-08-04 17:08:32.081907571 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-csu-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-csu-1:0xc2101aae00]
+Ping by /var/tmp/824-506/pb-38661-csu-1 (0) at 2014-08-22 15:20:56.911361599 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:32.102822863 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.012803099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-csu-1 (1) at 2014-08-04 17:08:32.183382707 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-csu-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-csu-1:0xc2101aae00]
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.113786099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:32.204084763 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.215594599 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-csu-1 (1) at 2014-08-04 17:08:32.285689796 -0400 EDT.
-View(1 , /var/tmp/824-506/pb-6568-csu-1, ) 
-map:  map[/var/tmp/824-506/pb-6568-csu-1:0xc2101aae00]
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.316076999 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
 
-Ping by /var/tmp/824-506/pb-6568-basic-2 (2) at 2014-08-04 17:08:32.305432511 -0400 EDT.
-View(2 , /var/tmp/824-506/pb-6568-basic-1, /var/tmp/824-506/pb-6568-basic-2) 
-map:  map[/var/tmp/824-506/pb-6568-basic-1:0xc2100b40c0 /var/tmp/824-506/pb-6568-basic-2:0xc21011d580]
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.416585299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.517015599 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.617454099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.717918299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.819677599 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:57.920233299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.020688299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.121170299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.221660799 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.322166199 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 0) expect pre_val: =hash( + ) 
+Clent: sends put request with seq_num:1
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 0! DoHash? true. Seq #: 1
+pb.kv:map[counter:0]
+
+PutHash(counter, 1) expect pre_val:0 =hash( + 0) 
+Clent: sends put request with seq_num:2
+ connection is shut down
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:2 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 1! DoHash? true. Seq #: 2
+pb.kv:map[counter:1]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.422739899 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 2) expect pre_val:1 =hash(0 + 1) 
+Clent: sends put request with seq_num:3
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:3 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 2! DoHash? true. Seq #: 3
+pb.kv:map[counter:3]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 2! DoHash? true. Seq #: 3
+Server: sequence 3, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.524088199 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 3) expect pre_val:3 =hash(1 + 2) 
+Clent: sends put request with seq_num:4
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:4 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 3! DoHash? true. Seq #: 4
+pb.kv:map[counter:6]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.625281299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 4) expect pre_val:6 =hash(3 + 3) 
+Clent: sends put request with seq_num:5
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 4! DoHash? true. Seq #: 5
+pb.kv:map[counter:10]
+
+PutHash(counter, 5) expect pre_val:10 =hash(6 + 4) 
+Clent: sends put request with seq_num:6
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 5! DoHash? true. Seq #: 6
+pb.kv:map[counter:15]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.726666899 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 6) expect pre_val:15 =hash(10 + 5) 
+Clent: sends put request with seq_num:7
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:7 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 6! DoHash? true. Seq #: 7
+pb.kv:map[counter:21]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.827151099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 7) expect pre_val:21 =hash(15 + 6) 
+Clent: sends put request with seq_num:8
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 7! DoHash? true. Seq #: 8
+pb.kv:map[counter:28]
+
+PutHash(counter, 8) expect pre_val:28 =hash(21 + 7) 
+Clent: sends put request with seq_num:9
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 8! DoHash? true. Seq #: 9
+pb.kv:map[counter:36]
+
+PutHash(counter, 9) expect pre_val:36 =hash(28 + 8) 
+Clent: sends put request with seq_num:10
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:10 
+read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 9! DoHash? true. Seq #: 10
+pb.kv:map[counter:45]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:58.927697099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:10 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 9! DoHash? true. Seq #: 10
+Server: sequence 10, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.028238099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 10) expect pre_val:45 =hash(36 + 9) 
+Clent: sends put request with seq_num:11
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 10! DoHash? true. Seq #: 11
+pb.kv:map[counter:55]
+
+PutHash(counter, 11) expect pre_val:55 =hash(45 + 10) 
+Clent: sends put request with seq_num:12
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 11! DoHash? true. Seq #: 12
+pb.kv:map[counter:66]
+
+PutHash(counter, 12) expect pre_val:66 =hash(55 + 11) 
+Clent: sends put request with seq_num:13
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 12! DoHash? true. Seq #: 13
+pb.kv:map[counter:78]
+
+PutHash(counter, 13) expect pre_val:78 =hash(66 + 12) 
+Clent: sends put request with seq_num:14
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 13! DoHash? true. Seq #: 14
+pb.kv:map[counter:91]
+
+PutHash(counter, 14) expect pre_val:91 =hash(78 + 13) 
+Clent: sends put request with seq_num:15
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 14! DoHash? true. Seq #: 15
+pb.kv:map[counter:105]
+
+PutHash(counter, 15) expect pre_val:105 =hash(91 + 14) 
+Clent: sends put request with seq_num:16
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:16 
+unexpected EOF
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 15! DoHash? true. Seq #: 16
+pb.kv:map[counter:120]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 15! DoHash? true. Seq #: 16
+Server: sequence 16, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.128706499 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:16 
+read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.229190499 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:16 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 15! DoHash? true. Seq #: 16
+Server: sequence 16, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.329666199 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 16) expect pre_val:120 =hash(105 + 15) 
+Clent: sends put request with seq_num:17
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:17 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 16! DoHash? true. Seq #: 17
+pb.kv:map[counter:136]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 16! DoHash? true. Seq #: 17
+Server: sequence 17, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.433046299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 17) expect pre_val:136 =hash(120 + 16) 
+Clent: sends put request with seq_num:18
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 17! DoHash? true. Seq #: 18
+pb.kv:map[counter:153]
+
+PutHash(counter, 18) expect pre_val:153 =hash(136 + 17) 
+Clent: sends put request with seq_num:19
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 18! DoHash? true. Seq #: 19
+pb.kv:map[counter:171]
+
+PutHash(counter, 19) expect pre_val:171 =hash(153 + 18) 
+Clent: sends put request with seq_num:20
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 19! DoHash? true. Seq #: 20
+pb.kv:map[counter:190]
+
+PutHash(counter, 20) expect pre_val:190 =hash(171 + 19) 
+Clent: sends put request with seq_num:21
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 20! DoHash? true. Seq #: 21
+pb.kv:map[counter:210]
+
+PutHash(counter, 21) expect pre_val:210 =hash(190 + 20) 
+Clent: sends put request with seq_num:22
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 21! DoHash? true. Seq #: 22
+pb.kv:map[counter:231]
+
+PutHash(counter, 22) expect pre_val:231 =hash(210 + 21) 
+Clent: sends put request with seq_num:23
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 22! DoHash? true. Seq #: 23
+pb.kv:map[counter:253]
+
+PutHash(counter, 23) expect pre_val:253 =hash(231 + 22) 
+Clent: sends put request with seq_num:24
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 23! DoHash? true. Seq #: 24
+pb.kv:map[counter:276]
+
+PutHash(counter, 24) expect pre_val:276 =hash(253 + 23) 
+Clent: sends put request with seq_num:25
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:25 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 24! DoHash? true. Seq #: 25
+pb.kv:map[counter:300]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.533591499 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 25) expect pre_val:300 =hash(276 + 24) 
+Clent: sends put request with seq_num:26
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 25! DoHash? true. Seq #: 26
+pb.kv:map[counter:325]
+
+PutHash(counter, 26) expect pre_val:325 =hash(300 + 25) 
+Clent: sends put request with seq_num:27
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 26! DoHash? true. Seq #: 27
+pb.kv:map[counter:351]
+
+PutHash(counter, 27) expect pre_val:351 =hash(325 + 26) 
+Clent: sends put request with seq_num:28
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 27! DoHash? true. Seq #: 28
+pb.kv:map[counter:378]
+
+PutHash(counter, 28) expect pre_val:378 =hash(351 + 27) 
+Clent: sends put request with seq_num:29
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 28! DoHash? true. Seq #: 29
+pb.kv:map[counter:406]
+
+PutHash(counter, 29) expect pre_val:406 =hash(378 + 28) 
+Clent: sends put request with seq_num:30
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 29! DoHash? true. Seq #: 30
+pb.kv:map[counter:435]
+
+PutHash(counter, 30) expect pre_val:435 =hash(406 + 29) 
+Clent: sends put request with seq_num:31
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:31 
+read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 30! DoHash? true. Seq #: 31
+pb.kv:map[counter:465]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.634081399 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:31 
+unexpected EOF
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 30! DoHash? true. Seq #: 31
+Server: sequence 31, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.734606299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:31 
+unexpected EOF
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 30! DoHash? true. Seq #: 31
+Server: sequence 31, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.835078899 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:31 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 30! DoHash? true. Seq #: 31
+Server: sequence 31, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:20:59.935561799 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 31) expect pre_val:465 =hash(435 + 30) 
+Clent: sends put request with seq_num:32
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:32 
+read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 31! DoHash? true. Seq #: 32
+pb.kv:map[counter:496]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.036043499 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:32 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 31! DoHash? true. Seq #: 32
+Server: sequence 32, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.136548799 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 32) expect pre_val:496 =hash(465 + 31) 
+Clent: sends put request with seq_num:33
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 32! DoHash? true. Seq #: 33
+pb.kv:map[counter:528]
+
+PutHash(counter, 33) expect pre_val:528 =hash(496 + 32) 
+Clent: sends put request with seq_num:34
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 33! DoHash? true. Seq #: 34
+pb.kv:map[counter:561]
+
+PutHash(counter, 34) expect pre_val:561 =hash(528 + 33) 
+Clent: sends put request with seq_num:35
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 34! DoHash? true. Seq #: 35
+pb.kv:map[counter:595]
+
+PutHash(counter, 35) expect pre_val:595 =hash(561 + 34) 
+Clent: sends put request with seq_num:36
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 35! DoHash? true. Seq #: 36
+pb.kv:map[counter:630]
+
+PutHash(counter, 36) expect pre_val:630 =hash(595 + 35) 
+Clent: sends put request with seq_num:37
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:37 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 36! DoHash? true. Seq #: 37
+pb.kv:map[counter:666]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.237011399 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 37) expect pre_val:666 =hash(630 + 36) 
+Clent: sends put request with seq_num:38
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 37! DoHash? true. Seq #: 38
+pb.kv:map[counter:703]
+
+PutHash(counter, 38) expect pre_val:703 =hash(666 + 37) 
+Clent: sends put request with seq_num:39
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 38! DoHash? true. Seq #: 39
+pb.kv:map[counter:741]
+
+PutHash(counter, 39) expect pre_val:741 =hash(703 + 38) 
+Clent: sends put request with seq_num:40
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 39! DoHash? true. Seq #: 40
+pb.kv:map[counter:780]
+
+unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:40 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 39! DoHash? true. Seq #: 40
+Server: sequence 40, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.337554199 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 40) expect pre_val:780 =hash(741 + 39) 
+Clent: sends put request with seq_num:41
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:41 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 40! DoHash? true. Seq #: 41
+pb.kv:map[counter:820]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 40! DoHash? true. Seq #: 41
+Server: sequence 41, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.438039499 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 41) expect pre_val:820 =hash(780 + 40) 
+Clent: sends put request with seq_num:42
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:42 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 41! DoHash? true. Seq #: 42
+pb.kv:map[counter:861]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 41! DoHash? true. Seq #: 42
+Server: sequence 42, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.538535999 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 42) expect pre_val:861 =hash(820 + 41) 
+Clent: sends put request with seq_num:43
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 42! DoHash? true. Seq #: 43
+pb.kv:map[counter:903]
+
+PutHash(counter, 43) expect pre_val:903 =hash(861 + 42) 
+Clent: sends put request with seq_num:44
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 43! DoHash? true. Seq #: 44
+pb.kv:map[counter:946]
+
+PutHash(counter, 44) expect pre_val:946 =hash(903 + 43) 
+Clent: sends put request with seq_num:45
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 44! DoHash? true. Seq #: 45
+pb.kv:map[counter:990]
+
+PutHash(counter, 45) expect pre_val:990 =hash(946 + 44) 
+Clent: sends put request with seq_num:46
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 45! DoHash? true. Seq #: 46
+pb.kv:map[counter:1035]
+
+PutHash(counter, 46) expect pre_val:1035 =hash(990 + 45) 
+Clent: sends put request with seq_num:47
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 46! DoHash? true. Seq #: 47
+pb.kv:map[counter:1081]
+
+PutHash(counter, 47) expect pre_val:1081 =hash(1035 + 46) 
+Clent: sends put request with seq_num:48
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 47! DoHash? true. Seq #: 48
+pb.kv:map[counter:1128]
+
+PutHash(counter, 48) expect pre_val:1128 =hash(1081 + 47) 
+Clent: sends put request with seq_num:49
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 48! DoHash? true. Seq #: 49
+pb.kv:map[counter:1176]
+
+PutHash(counter, 49) expect pre_val:1176 =hash(1128 + 48) 
+Clent: sends put request with seq_num:50
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 49! DoHash? true. Seq #: 50
+pb.kv:map[counter:1225]
+
+PutHash(counter, 50) expect pre_val:1225 =hash(1176 + 49) 
+Clent: sends put request with seq_num:51
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 50! DoHash? true. Seq #: 51
+pb.kv:map[counter:1275]
+
+PutHash(counter, 51) expect pre_val:1275 =hash(1225 + 50) 
+Clent: sends put request with seq_num:52
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 51! DoHash? true. Seq #: 52
+pb.kv:map[counter:1326]
+
+PutHash(counter, 52) expect pre_val:1326 =hash(1275 + 51) 
+Clent: sends put request with seq_num:53
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 52! DoHash? true. Seq #: 53
+pb.kv:map[counter:1378]
+
+PutHash(counter, 53) expect pre_val:1378 =hash(1326 + 52) 
+Clent: sends put request with seq_num:54
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 53! DoHash? true. Seq #: 54
+pb.kv:map[counter:1431]
+
+PutHash(counter, 54) expect pre_val:1431 =hash(1378 + 53) 
+Clent: sends put request with seq_num:55
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:55 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 54! DoHash? true. Seq #: 55
+pb.kv:map[counter:1485]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.639030299 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 55) expect pre_val:1485 =hash(1431 + 54) 
+Clent: sends put request with seq_num:56
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:56 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 55! DoHash? true. Seq #: 56
+pb.kv:map[counter:1540]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 55! DoHash? true. Seq #: 56
+Server: sequence 56, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.739549199 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 56) expect pre_val:1540 =hash(1485 + 55) 
+Clent: sends put request with seq_num:57
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:57 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 56! DoHash? true. Seq #: 57
+pb.kv:map[counter:1596]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.840020999 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 57) expect pre_val:1596 =hash(1540 + 56) 
+Clent: sends put request with seq_num:58
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 57! DoHash? true. Seq #: 58
+pb.kv:map[counter:1653]
+
+PutHash(counter, 58) expect pre_val:1653 =hash(1596 + 57) 
+Clent: sends put request with seq_num:59
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 58! DoHash? true. Seq #: 59
+pb.kv:map[counter:1711]
+
+PutHash(counter, 59) expect pre_val:1711 =hash(1653 + 58) 
+Clent: sends put request with seq_num:60
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 59! DoHash? true. Seq #: 60
+pb.kv:map[counter:1770]
+
+PutHash(counter, 60) expect pre_val:1770 =hash(1711 + 59) 
+Clent: sends put request with seq_num:61
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 60! DoHash? true. Seq #: 61
+pb.kv:map[counter:1830]
+
+PutHash(counter, 61) expect pre_val:1830 =hash(1770 + 60) 
+Clent: sends put request with seq_num:62
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 61! DoHash? true. Seq #: 62
+pb.kv:map[counter:1891]
+
+PutHash(counter, 62) expect pre_val:1891 =hash(1830 + 61) 
+Clent: sends put request with seq_num:63
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 62! DoHash? true. Seq #: 63
+pb.kv:map[counter:1953]
+
+PutHash(counter, 63) expect pre_val:1953 =hash(1891 + 62) 
+Clent: sends put request with seq_num:64
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 63! DoHash? true. Seq #: 64
+pb.kv:map[counter:2016]
+
+PutHash(counter, 64) expect pre_val:2016 =hash(1953 + 63) 
+Clent: sends put request with seq_num:65
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 64! DoHash? true. Seq #: 65
+pb.kv:map[counter:2080]
+
+PutHash(counter, 65) expect pre_val:2080 =hash(2016 + 64) 
+Clent: sends put request with seq_num:66
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 65! DoHash? true. Seq #: 66
+pb.kv:map[counter:2145]
+
+PutHash(counter, 66) expect pre_val:2145 =hash(2080 + 65) 
+Clent: sends put request with seq_num:67
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 66! DoHash? true. Seq #: 67
+pb.kv:map[counter:2211]
+
+PutHash(counter, 67) expect pre_val:2211 =hash(2145 + 66) 
+Clent: sends put request with seq_num:68
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:68 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 67! DoHash? true. Seq #: 68
+pb.kv:map[counter:2278]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:00.940503799 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 68) expect pre_val:2278 =hash(2211 + 67) 
+Clent: sends put request with seq_num:69
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 68! DoHash? true. Seq #: 69
+pb.kv:map[counter:2346]
+
+PutHash(counter, 69) expect pre_val:2346 =hash(2278 + 68) 
+Clent: sends put request with seq_num:70
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 69! DoHash? true. Seq #: 70
+pb.kv:map[counter:2415]
+
+PutHash(counter, 70) expect pre_val:2415 =hash(2346 + 69) 
+Clent: sends put request with seq_num:71
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 70! DoHash? true. Seq #: 71
+pb.kv:map[counter:2485]
+
+PutHash(counter, 71) expect pre_val:2485 =hash(2415 + 70) 
+Clent: sends put request with seq_num:72
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 71! DoHash? true. Seq #: 72
+pb.kv:map[counter:2556]
+
+PutHash(counter, 72) expect pre_val:2556 =hash(2485 + 71) 
+Clent: sends put request with seq_num:73
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 72! DoHash? true. Seq #: 73
+pb.kv:map[counter:2628]
+
+PutHash(counter, 73) expect pre_val:2628 =hash(2556 + 72) 
+Clent: sends put request with seq_num:74
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 73! DoHash? true. Seq #: 74
+pb.kv:map[counter:2701]
+
+PutHash(counter, 74) expect pre_val:2701 =hash(2628 + 73) 
+Clent: sends put request with seq_num:75
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 74! DoHash? true. Seq #: 75
+pb.kv:map[counter:2775]
+
+PutHash(counter, 75) expect pre_val:2775 =hash(2701 + 74) 
+Clent: sends put request with seq_num:76
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 75! DoHash? true. Seq #: 76
+pb.kv:map[counter:2850]
+
+PutHash(counter, 76) expect pre_val:2850 =hash(2775 + 75) 
+Clent: sends put request with seq_num:77
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:77 
+unexpected EOF
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 76! DoHash? true. Seq #: 77
+pb.kv:map[counter:2926]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 76! DoHash? true. Seq #: 77
+Server: sequence 77, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.041006399 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:77 
+read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.141517799 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:77 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 76! DoHash? true. Seq #: 77
+Server: sequence 77, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.241972399 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 77) expect pre_val:2926 =hash(2850 + 76) 
+Clent: sends put request with seq_num:78
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:78 
+unexpected EOF
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 77! DoHash? true. Seq #: 78
+pb.kv:map[counter:3003]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.343213999 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:78 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 77! DoHash? true. Seq #: 78
+Server: sequence 78, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.443672099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 78) expect pre_val:3003 =hash(2926 + 77) 
+Clent: sends put request with seq_num:79
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 78! DoHash? true. Seq #: 79
+pb.kv:map[counter:3081]
+
+PutHash(counter, 79) expect pre_val:3081 =hash(3003 + 78) 
+Clent: sends put request with seq_num:80
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 79! DoHash? true. Seq #: 80
+pb.kv:map[counter:3160]
+
+PutHash(counter, 80) expect pre_val:3160 =hash(3081 + 79) 
+Clent: sends put request with seq_num:81
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 80! DoHash? true. Seq #: 81
+pb.kv:map[counter:3240]
+
+PutHash(counter, 81) expect pre_val:3240 =hash(3160 + 80) 
+Clent: sends put request with seq_num:82
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 81! DoHash? true. Seq #: 82
+pb.kv:map[counter:3321]
+
+PutHash(counter, 82) expect pre_val:3321 =hash(3240 + 81) 
+Clent: sends put request with seq_num:83
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 82! DoHash? true. Seq #: 83
+pb.kv:map[counter:3403]
+
+PutHash(counter, 83) expect pre_val:3403 =hash(3321 + 82) 
+Clent: sends put request with seq_num:84
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:84 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 83! DoHash? true. Seq #: 84
+pb.kv:map[counter:3486]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 83! DoHash? true. Seq #: 84
+Server: sequence 84, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.544126899 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 84) expect pre_val:3486 =hash(3403 + 83) 
+Clent: sends put request with seq_num:85
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:85 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 84! DoHash? true. Seq #: 85
+pb.kv:map[counter:3570]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 84! DoHash? true. Seq #: 85
+Server: sequence 85, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.646801699 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 85) expect pre_val:3570 =hash(3486 + 84) 
+Clent: sends put request with seq_num:86
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 85! DoHash? true. Seq #: 86
+pb.kv:map[counter:3655]
+
+PutHash(counter, 86) expect pre_val:3655 =hash(3570 + 85) 
+Clent: sends put request with seq_num:87
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:87 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 86! DoHash? true. Seq #: 87
+pb.kv:map[counter:3741]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 86! DoHash? true. Seq #: 87
+Server: sequence 87, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.747257899 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 87) expect pre_val:3741 =hash(3655 + 86) 
+Clent: sends put request with seq_num:88
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 87! DoHash? true. Seq #: 88
+pb.kv:map[counter:3828]
+
+PutHash(counter, 88) expect pre_val:3828 =hash(3741 + 87) 
+Clent: sends put request with seq_num:89
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:89 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 88! DoHash? true. Seq #: 89
+pb.kv:map[counter:3916]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 88! DoHash? true. Seq #: 89
+Server: sequence 89, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.847682899 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 89) expect pre_val:3916 =hash(3828 + 88) 
+Clent: sends put request with seq_num:90
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 89! DoHash? true. Seq #: 90
+pb.kv:map[counter:4005]
+
+PutHash(counter, 90) expect pre_val:4005 =hash(3916 + 89) 
+Clent: sends put request with seq_num:91
+ unexpected EOF
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:91 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 90! DoHash? true. Seq #: 91
+pb.kv:map[counter:4095]
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 90! DoHash? true. Seq #: 91
+Server: sequence 91, client 194061985549153478 has already been handled 
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:01.948129099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 91) expect pre_val:4095 =hash(4005 + 90) 
+Clent: sends put request with seq_num:92
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 91! DoHash? true. Seq #: 92
+pb.kv:map[counter:4186]
+
+PutHash(counter, 92) expect pre_val:4186 =hash(4095 + 91) 
+Clent: sends put request with seq_num:93
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 92! DoHash? true. Seq #: 93
+pb.kv:map[counter:4278]
+
+PutHash(counter, 93) expect pre_val:4278 =hash(4186 + 92) 
+Clent: sends put request with seq_num:94
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 93! DoHash? true. Seq #: 94
+pb.kv:map[counter:4371]
+
+PutHash(counter, 94) expect pre_val:4371 =hash(4278 + 93) 
+Clent: sends put request with seq_num:95
+ read unix /var/tmp/824-506/pb-38661-csu-1: connection reset by peer
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:95 
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 94! DoHash? true. Seq #: 95
+pb.kv:map[counter:4465]
+
+Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:02.048599099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+PutHash(counter, 95) expect pre_val:4465 =hash(4371 + 94) 
+Clent: sends put request with seq_num:96
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 95! DoHash? true. Seq #: 96
+pb.kv:map[counter:4560]
+
+PutHash(counter, 96) expect pre_val:4560 =hash(4465 + 95) 
+Clent: sends put request with seq_num:97
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 96! DoHash? true. Seq #: 97
+pb.kv:map[counter:4656]
+
+PutHash(counter, 97) expect pre_val:4656 =hash(4560 + 96) 
+Clent: sends put request with seq_num:98
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 97! DoHash? true. Seq #: 98
+pb.kv:map[counter:4753]
+
+PutHash(counter, 98) expect pre_val:4753 =hash(4656 + 97) 
+Clent: sends put request with seq_num:99
+ Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 98! DoHash? true. Seq #: 99
+pb.kv:map[counter:4851]
+
+PutHash(counter, 99) expect pre_val:4851 =hash(4753 + 98) 
+Clent: sends put request with seq_num:100
+ Ping by /var/tmp/824-506/pb-38661-csu-1 (1) at 2014-08-22 15:21:02.150294099 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-csu-1, ) 
+
+Server: /var/tmp/824-506/pb-38661-csu-1 received put request counter -> 99! DoHash? true. Seq #: 100
+pb.kv:map[counter:4950]
+
+PBServer.Get:counter
+ kv: map[counter:4950]   /var/tmp/824-506/pb-38661-csu-1
+  ... Passed
+Server: Killed! /var/tmp/824-506/pb-38661-csu-1
+/var/tmp/824-506/pb-38661-csu-1: wait until all request are done
+Primary is dead! Promote Backup!
+P is dead, but no backup, system collapse!!!
+Ping by /var/tmp/824-506/pb-38661-failput-1 (0) at 2014-08-22 15:21:05.152511199 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:05.253002599 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:05.353542999 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:05.454514699 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:05.555057399 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:05.655650899 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:05.756192199 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:05.856724199 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:05.957239399 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:06.057765699 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (0) at 2014-08-22 15:21:06.152733699 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:06.158285999 -0400 EDT.
+View(1 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (1) at 2014-08-22 15:21:06.253206999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (1) at 2014-08-22 15:21:06.258782199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Transfer database to backup: /var/tmp/824-506/pb-38661-failput-2
+PBServer.Receive: map[]
+reply.knum= 0
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:06.353797499 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:06.359667199 -0400 EDT.
+View 2 ACKed!
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:06.454277299 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:06.460143699 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:06.554785699 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:06.560595599 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:06.655289099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:06.661061099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:06.755909999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:06.761577499 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:06.856438099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:06.862064699 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:06.957002799 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:06.963488299 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.057541599 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.063963599 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (0) at 2014-08-22 15:21:07.153183099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.158038899 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.164505199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:07.253712099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.258523399 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.265026999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:07.354224199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.359552299 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.365534999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:07.454713499 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.460025699 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.466001099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:07.555249999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.560519299 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.566450899 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:07.655822599 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.664373999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.666922599 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:07.756382399 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.764944199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.767425199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:07.857078599 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.865498899 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.867908799 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:07.957601099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:07.967765099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:07.968356599 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:08.058128999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-2 (2) at 2014-08-22 15:21:08.068256799 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.068859999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Clent: sends put request with seq_num:1
+ Server: /var/tmp/824-506/pb-38661-failput-1 received put request a -> aa! DoHash? false. Seq #: 1
+pb.kv:map[a:aa]
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 sending putupdate request a -> aa!
+Server(Backup): /var/tmp/824-506/pb-38661-failput-2 received putupdate request a -> aa! State is aa
+Clent: sends put request with seq_num:2
+ Server: /var/tmp/824-506/pb-38661-failput-1 received put request b -> bb! DoHash? false. Seq #: 2
+pb.kv:map[a:aa b:bb]
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 sending putupdate request b -> bb!
+Server(Backup): /var/tmp/824-506/pb-38661-failput-2 received putupdate request b -> bb! State is bb
+Clent: sends put request with seq_num:3
+ Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:08.158643499 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Server: /var/tmp/824-506/pb-38661-failput-1 received put request c -> cc! DoHash? false. Seq #: 3
+pb.kv:map[a:aa b:bb c:cc]
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 sending putupdate request c -> cc!
+Server(Backup): /var/tmp/824-506/pb-38661-failput-2 received putupdate request c -> cc! State is cc
+PBServer.Get:a
+ kv: map[a:aa b:bb c:cc]   /var/tmp/824-506/pb-38661-failput-1
+PBServer.Get:b
+ kv: map[a:aa b:bb c:cc]   /var/tmp/824-506/pb-38661-failput-1
+PBServer.Get:c
+ kv: map[a:aa b:bb c:cc]   /var/tmp/824-506/pb-38661-failput-1
+Test: Put() immediately after backup failure ...
+Server: Killed! /var/tmp/824-506/pb-38661-failput-2
+Clent: sends put request with seq_num:4
+ /var/tmp/824-506/pb-38661-failput-2: wait until all request are done
+Server: /var/tmp/824-506/pb-38661-failput-1 received put request a -> aaa! DoHash? false. Seq #: 4
+pb.kv:map[a:aaa b:bb c:cc]
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 sending putupdate request a -> aaa!
+Server(Primary): received error from backup /var/tmp/824-506/pb-38661-failput-2 when trying send putupdate! OK: false reply.Err: 
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.169328199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:08.259211499 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.263201999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 re-try sending putupdate request a -> aaa!
+Server(Primary): received error from backup /var/tmp/824-506/pb-38661-failput-2 when trying send putupdate! OK: false reply.Err: 
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.269851899 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:08.360785999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.363752899 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 re-try sending putupdate request a -> aaa!
+Server(Primary): received error from backup /var/tmp/824-506/pb-38661-failput-2 when trying send putupdate! OK: false reply.Err: 
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.370283099 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:08.461297199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.464233499 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 re-try sending putupdate request a -> aaa!
+Server(Primary): received error from backup /var/tmp/824-506/pb-38661-failput-2 when trying send putupdate! OK: false reply.Err: 
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.470827799 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:08.561888499 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.564666999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 re-try sending putupdate request a -> aaa!
+Server(Primary): received error from backup /var/tmp/824-506/pb-38661-failput-2 when trying send putupdate! OK: false reply.Err: 
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.572732499 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:08.662399199 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.665131999 -0400 EDT.
+View(2 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-2) 
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 re-try sending putupdate request a -> aaa!
+Server(Primary): received error from backup /var/tmp/824-506/pb-38661-failput-2 when trying send putupdate! OK: false reply.Err: 
+Backup is dead!
+Ping by /var/tmp/824-506/pb-38661-failput-1 (2) at 2014-08-22 15:21:08.673244999 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (2) at 2014-08-22 15:21:08.762958699 -0400 EDT.
+View(3 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (3) at 2014-08-22 15:21:08.765640299 -0400 EDT.
+View 3 ACKed!
+View(3 , /var/tmp/824-506/pb-38661-failput-1, ) 
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 re-try sending putupdate request a -> aaa!
+Server(Primary): received error from backup  when trying send putupdate! OK: false reply.Err: 
+Ping by /var/tmp/824-506/pb-38661-failput-1 (3) at 2014-08-22 15:21:08.773679199 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Transfer database to backup: /var/tmp/824-506/pb-38661-failput-3
+PBServer.Receive: map[a:aaa b:bb c:cc]
+reply.knum= 3
+Ping by /var/tmp/824-506/pb-38661-failput-3 (3) at 2014-08-22 15:21:08.863537599 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:08.866149999 -0400 EDT.
+View 4 ACKed!
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Server(Primary): /var/tmp/824-506/pb-38661-failput-1 re-try sending putupdate request a -> aaa!
+Server(Backup): /var/tmp/824-506/pb-38661-failput-3 received putupdate request a -> aaa! State is aaa
+PBServer.Get:a
+ kv: map[a:aaa b:bb c:cc]   /var/tmp/824-506/pb-38661-failput-1
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:08.874508899 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:08.964080699 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:08.974959299 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.064648399 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:09.075423299 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.165217199 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:09.175902499 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.265718799 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:09.276412799 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.366544899 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:09.376925999 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.467064399 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:09.477400899 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.567613999 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:09.579217899 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.668121899 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:09.679664399 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.768640899 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-1 (4) at 2014-08-22 15:21:09.780087399 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+PBServer.Get:a
+ kv: map[a:aaa b:bb c:cc]   /var/tmp/824-506/pb-38661-failput-1
+  ... Passed
+Test: Put() immediately after primary failure ...
+Server: Killed! /var/tmp/824-506/pb-38661-failput-1
+Clent: sends put request with seq_num:5
+ /var/tmp/824-506/pb-38661-failput-1: wait until all request are done
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:5 
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.869692899 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:09.970212299 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:5 
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:10.070801799 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:5 
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:10.171284999 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:5 
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:10.271832199 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:5 
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:10.372333999 -0400 EDT.
+View(4 , /var/tmp/824-506/pb-38661-failput-1, /var/tmp/824-506/pb-38661-failput-3) 
+
+Client: received failed put request! OK: false reply.Err: 
+Client: re-try sends put request with seq_num:5 
+Primary is dead! Promote Backup!
+Server: /var/tmp/824-506/pb-38661-failput-3 received put request b -> bbb! DoHash? false. Seq #: 5
+Server: I /var/tmp/824-506/pb-38661-failput-3 am not primary and cannot put this!
+Client: received failed put request! OK: true reply.Err: ErrWrongServer
+Client: re-try sends put request with seq_num:5 
+Ping by /var/tmp/824-506/pb-38661-failput-3 (4) at 2014-08-22 15:21:10.474320499 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Server: /var/tmp/824-506/pb-38661-failput-3 received put request b -> bbb! DoHash? false. Seq #: 5
+pb.kv:map[a:aaa b:bbb c:cc]
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:10.574845299 -0400 EDT.
+View 5 ACKed!
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+PBServer.Get:b
+ kv: map[a:aaa b:bbb c:cc]   /var/tmp/824-506/pb-38661-failput-3
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:10.675362099 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:10.775878499 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:10.876349899 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:10.976897099 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:11.077427899 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:11.177987899 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:11.278498899 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:11.378969699 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:11.479425699 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+Ping by /var/tmp/824-506/pb-38661-failput-3 (5) at 2014-08-22 15:21:11.582685399 -0400 EDT.
+View(5 , /var/tmp/824-506/pb-38661-failput-3, ) 
+
+PBServer.Get:a
+ kv: map[a:aaa b:bbb c:cc]   /var/tmp/824-506/pb-38661-failput-3
+PBServer.Get:b
+ kv: map[a:aaa b:bbb c:cc]   /var/tmp/824-506/pb-38661-failput-3
+PBServer.Get:c
+ kv: map[a:aaa b:bbb c:cc]   /var/tmp/824-506/pb-38661-failput-3
+  ... Passed
+Server: Killed! /var/tmp/824-506/pb-38661-failput-1
+Server: Killed! /var/tmp/824-506/pb-38661-failput-2
+Server: Killed! /var/tmp/824-506/pb-38661-failput-3
+/var/tmp/824-506/pb-38661-failput-3: wait until all request are done
+PASS
+ok  	pbservice	23.947s
