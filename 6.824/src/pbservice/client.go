@@ -63,9 +63,7 @@ func call(srv string, rpcname string,
   if err == nil {
     return true
   }
-  fmt.Println("TEST1")
   fmt.Println(err)
-  fmt.Println("TEST")
   return false
 }
 
@@ -95,13 +93,15 @@ func (ck *Clerk) Get(key string) string {
 func (ck *Clerk) PutExt(key string, value string, dohash bool) string {
     // Your code here.
     ck.seq_num++
-    fmt.Printf("client sends put request with seq_num:%v \n ", ck.seq_num)
+    fmt.Printf("Clent: sends put request with seq_num:%v \n ", ck.seq_num)
 
     args := &PutArgs{Key: key, Value: value, DoHash: dohash, SeqNum:ck.seq_num, ClientID: ck.id}
     var reply PutReply
     ok := call(ck.vs.Primary(), "PBServer.Put", args, &reply)
     for ok == false || reply.Err != OK  {
-        fmt.Printf("client received failed put request! OK: %t reply.Err: %s\n", ok, reply.Err)
+        fmt.Printf("Client: received failed put request! OK: %t reply.Err: %s\n", ok, reply.Err)
+        fmt.Printf("Client: re-try sends put request with seq_num:%v \n", ck.seq_num)
+
         ok = call(ck.vs.Primary(), "PBServer.Put", args, &reply)
         time.Sleep(viewservice.PingInterval)
     }

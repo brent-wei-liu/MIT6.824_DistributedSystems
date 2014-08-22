@@ -1,7 +1,11 @@
 package pbservice
 
-import "hash/fnv"
-
+//import "hash/fnv"
+import ( 
+    "fmt"
+    "strconv"
+    "os"
+)
 const (
   OK = "OK"
   ErrNoKey = "ErrNoKey"
@@ -46,17 +50,45 @@ type TransferReply struct{
   Err Err
 }
 
-type ReceivePutArgs struct{
+type PutUpdateArgs struct{
   Key string
   Value string
+  SeqNum int64
+  ClientID int64
 }
-type ReceivePutReply struct{
+type PutUpdateReply struct{
   Err Err
 }
 
-func hash(s string) uint32 {
-  h := fnv.New32a()
-  h.Write([]byte(s))
-  return h.Sum32()
+func hash(a string,b string) uint32 {
+//   h := fnv.New32a()
+//   h.Write([]byte(s))
+//   return h.Sum32()
+   ai, err := strconv.Atoi(a)
+       if err != nil {
+           // handle error
+           if a == "" {
+              ai = 0
+           }else{
+
+               fmt.Println(err)
+               os.Exit(2)
+           }
+       }
+   
+
+   bi, err := strconv.Atoi(b)
+       if err != nil {
+           // handle error
+           if b == "" {
+               bi = 0
+           }else{
+           fmt.Println(err)
+           os.Exit(2)
+           }
+       }
+   
+   return uint32(ai + bi)
+
 }
 
