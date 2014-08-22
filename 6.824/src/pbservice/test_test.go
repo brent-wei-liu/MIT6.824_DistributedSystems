@@ -2,8 +2,8 @@ package pbservice
 
 import "viewservice"
 import "fmt"
-//import "io"
-//import "net"
+import "io"
+import "net"
 import "testing"
 import "time"
 import "log"
@@ -393,7 +393,6 @@ func TestConcurrentSame(t *testing.T) {
   vs.Kill()
   time.Sleep(time.Second)
 }
-/*
 func TestConcurrentSameUnreliable(t *testing.T) {
   runtime.GOMAXPROCS(4)
 
@@ -667,7 +666,9 @@ func TestRepeatedCrashUnreliable(t *testing.T) {
         if pv != data[k] {
           t.Fatalf("ck.Puthash(%s) returned %v but expected %v at iter %d\n", k, pv, data[k], n)
         }
-        h := hash(data[k] + v)
+        
+        //h := hash(data[k] + v)
+        h := hash(data[k] , v)
         data[k] = strconv.Itoa(int(h))
         v = ck.Get(k)
         if v != data[k] {
@@ -956,4 +957,3 @@ func TestPartition2(t *testing.T) {
   s3.kill()
   vs.Kill()
 }
-*/

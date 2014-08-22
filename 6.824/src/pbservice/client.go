@@ -79,9 +79,13 @@ func (ck *Clerk) Get(key string) string {
   // Your code here.
   args := &GetArgs{key}
   var reply GetReply
-  var ok bool = false
-  for ok == false {
-    ok = call(ck.vs.Primary(), "PBServer.Get", args, &reply)
+  DPrintf("Client[%v]: send get(%v) request to primary:%v\n",ck.id, key, ck.vs.Primary() ) 
+  ok := call(ck.vs.Primary(), "PBServer.Get", args, &reply)
+  for ok == false || reply.Err != OK{
+      DPrintf("Client[%v]: Get request receive error! ok:%v reply.Err:%v\n",ck.id, ok, reply.Err)
+      DPrintf("Client[%v]: re-try sending get(%v) request to primary:%v\n",ck.id, key, ck.vs.Primary() ) 
+      ok = call(ck.vs.Primary(), "PBServer.Get", args, &reply)
+      time.Sleep(viewservice.PingInterval)
   }
   return reply.Value
 }
@@ -93,7 +97,7 @@ func (ck *Clerk) Get(key string) string {
 func (ck *Clerk) PutExt(key string, value string, dohash bool) string {
     // Your code here.
     ck.seq_num++
-    fmt.Printf("Clent: sends put request with seq_num:%v\n ", ck.seq_num)
+    fmt.Printf("Clent: sends put request with seq_num:%v\n", ck.seq_num)
 
     args := &PutArgs{Key: key, Value: value, DoHash: dohash, SeqNum:ck.seq_num, ClientID: ck.id}
     var reply PutReply

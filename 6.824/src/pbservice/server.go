@@ -68,7 +68,7 @@ func (pb *PBServer) Put(args *PutArgs, reply *PutReply) error {
             reply.PreviousValue = prev_val
         }
         pb.kv[args.Key] = args.Value
-        DPrintf("pb.kv:%v\n\n",pb.kv)
+        DPrintf("Server: pb.kv:%v\n\n",pb.kv)
         reply.Err = OK
         pb.client_map[args.ClientID][args.SeqNum] = reply.PreviousValue
         if pb.backup != "" && ! handled{
@@ -87,11 +87,17 @@ func (pb *PBServer) Put(args *PutArgs, reply *PutReply) error {
 
 func (pb *PBServer) Get(args *GetArgs, reply *GetReply) error {
   // Your code here.
-//  var ok bool
-  DPrintf("PBServer.Get:%v\n",args.Key)
-  fmt.Println(" kv:",pb.kv, " ",pb.me)
+  //  var ok bool
+  DPrintf("Server: Get:%v\n",args.Key)
+  if pb.primary == pb.me {
+      fmt.Println(" kv:",pb.kv, " ",pb.me)
+      reply.Value = pb.kv[args.Key]
+      reply.Err = OK
+  }else{
+      DPrintf("Server: I am not primary ,cannot do this!\n")
+      reply.Err = ErrWrongServer
+  }
   
-  reply.Value = pb.kv[args.Key]
 //  if ok == false {
 //    return fmt.Errorf("Get(%v) failed!", args.Key)
 //  }
@@ -136,11 +142,7 @@ func (pb *PBServer) TransferState(args *TransferArgs, reply *TransferReply) erro
   }
   pb.kv = args.KV
   reply.KeyNum = len(pb.kv)
-  fmt.Println("PBServer.Receive:",pb.kv)
-  fmt.Println("reply.KeyNum=", reply.KeyNum)
-//  if ok == false {
-//    return fmt.Errorf("Get(%v) failed!", args.Key)
-//  }
+  fmt.Println("Server(Backup) Receive Transfer State:",pb.kv)
   return nil
 }
 
@@ -153,14 +155,14 @@ func (pb *PBServer) tick() {
    if view.Viewnum != pb.view.Viewnum {
        // transfer all key/value from the current primary to a new backup
        if pb.primary == pb.me && view.Backup != ""{
-          fmt.Println("Transfer database to backup:", view.Backup)
+          fmt.Println("Server(Primary):Transfer database to backup:", view.Backup)
         
           args := &TransferArgs{pb.kv}
           var reply TransferReply
           ok := call(view.Backup, "PBServer.TransferState", args, &reply)
           if ok == false || reply.KeyNum != len(pb.kv) {
           //if ok == false {
-              fmt.Printf("Transfer database to backup failed! reply.KeyNum=%v len(pb.kv)=%v\n", reply.KeyNum, len(pb.kv))
+              fmt.Printf("Server(Primary):Transfer database to backup failed! reply.KeyNum=%v len(pb.kv)=%v\n", reply.KeyNum, len(pb.kv))
           }else{
               pb.backup = view.Backup
               pb.view = view
