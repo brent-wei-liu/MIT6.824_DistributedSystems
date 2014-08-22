@@ -135,9 +135,9 @@ func (pb *PBServer) TransferState(args *TransferArgs, reply *TransferReply) erro
     return fmt.Errorf("Receive Backup database error! I am Primary!\n");
   }
   pb.kv = args.KV
-  reply.knum = len(pb.kv)
+  reply.KeyNum = len(pb.kv)
   fmt.Println("PBServer.Receive:",pb.kv)
-  fmt.Println("reply.knum=", reply.knum)
+  fmt.Println("reply.KeyNum=", reply.KeyNum)
 //  if ok == false {
 //    return fmt.Errorf("Get(%v) failed!", args.Key)
 //  }
@@ -158,9 +158,9 @@ func (pb *PBServer) tick() {
           args := &TransferArgs{pb.kv}
           var reply TransferReply
           ok := call(view.Backup, "PBServer.TransferState", args, &reply)
-          //if ok == false || reply.knum != len(pb.kv) {
-          if ok == false {
-              fmt.Printf("Transfer database to backup failed! reply.knum=%v len(pb.kv)=%v\n", reply.knum, len(pb.kv))
+          if ok == false || reply.KeyNum != len(pb.kv) {
+          //if ok == false {
+              fmt.Printf("Transfer database to backup failed! reply.KeyNum=%v len(pb.kv)=%v\n", reply.KeyNum, len(pb.kv))
           }else{
               pb.backup = view.Backup
               pb.view = view

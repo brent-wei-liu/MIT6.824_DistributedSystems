@@ -8,7 +8,7 @@ import "testing"
 import "time"
 import "log"
 import "runtime"
-//import "math/rand"
+import "math/rand"
 import "os"
 import "strconv"
 
@@ -295,7 +295,6 @@ func TestFailPut(t *testing.T) {
   time.Sleep(viewservice.PingInterval * 2)
   vs.Kill()
 }
-/*
 // do a bunch of concurrent Put()s on the same key,
 // then check that primary and backup have identical values.
 // i.e. that they processed the Put()s in the same order.
@@ -394,7 +393,7 @@ func TestConcurrentSame(t *testing.T) {
   vs.Kill()
   time.Sleep(time.Second)
 }
-
+/*
 func TestConcurrentSameUnreliable(t *testing.T) {
   runtime.GOMAXPROCS(4)
 

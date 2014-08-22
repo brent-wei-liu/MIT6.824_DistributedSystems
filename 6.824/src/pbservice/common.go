@@ -46,7 +46,7 @@ type TransferArgs struct{
   KV map[string]string
 }
 type TransferReply struct{
-  knum int
+  KeyNum int
   Err Err
 }
 
